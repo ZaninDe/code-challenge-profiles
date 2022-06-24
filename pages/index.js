@@ -1,6 +1,6 @@
 // author: Gabriel Zanin
 // techs: Nextjs, api dynamic routes, tailwindcss
-/* features:
+/* future features:
             -single profile page rendered with more data
             -server api doployed serparatly, on railway.app for example
             -CRUD
