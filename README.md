@@ -41,4 +41,4 @@ $ npm install
 ```
 
 ## 💭 Bonus
-- See the project running with this [URL](https://code-challenge-profiles-zaninde.vercel.app/).
+- See the project running with this [URL](https://code-challenge-profiles.vercel.app/).
