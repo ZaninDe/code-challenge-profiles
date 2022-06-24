@@ -1,3 +1,10 @@
+// author: Gabriel Zanin
+// techs: Nextjs, api dynamic routes, tailwindcss
+/* features:
+            -single profile page rendered with more data
+            -server api doployed serparatly, on railway.app for example
+            -CRUD
+*/
 import { CSVLink } from 'react-csv';
 import { useEffect, useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
@@ -7,16 +14,18 @@ import axios from 'axios';
 export default function Home() {
   const [profiles, setProfiles] = useState([]);
 
+  // fetch data api and set on profiles array
   useEffect(() => {
     axios
       .get('api/profiles')
       .then((response) => setProfiles(response.data))
+      // if request does not complete
       .catch((rejected) => {
         console.log(rejected);
       });
   }, []);
 
-  console.log(profiles);
+  // split object to be exported
   const headers = [
     { label: 'name', key: 'name' },
     { label: 'email', key: 'email' },
@@ -24,8 +33,9 @@ export default function Home() {
     { label: 'twitter', key: 'twitter' },
   ];
 
+  // set CSV to export
   const csvReport = {
-    filename: 'Report.csv',
+    filename: 'Profiles.csv',
     headers: headers,
     data: profiles,
   };
@@ -40,6 +50,7 @@ export default function Home() {
         EXPORT CSV
       </CSVLink>
       {profiles.map((profile) => {
+        // entire url for each profile route redirect
         const url = `${document.URL}/api/profile/${profile.id}`;
         return (
           <>

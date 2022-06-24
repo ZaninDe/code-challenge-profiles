@@ -1,35 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+[![Author](https://img.shields.io/badge/author-ZaninDe-ff9000?style=flat-square)](https://github.com/ZaninDe)
+[![Languages](https://img.shields.io/github/languages/count/ZaninDe/unitok-challenge?color=%23ff9000&style=flat-square)](#)
+[![Stars](https://img.shields.io/github/stars/ZaninDe/unitok-challenge?color=ff9000&style=flat-square)](https://github.com/ZaninDe/unitok-challenge/stargazers)
+[![Forks](https://img.shields.io/github/forks/ZaninDe/unitok-challenge?color=%23ff9000&style=flat-square)](https://github.com/ZaninDe/unitok-challenge/network/members)
+[![Contributors](https://img.shields.io/github/contributors/ZaninDe/unitok-challenge?color=ff9000&style=flat-square)](https://github.com/ZaninDe/unitok-challenge/graphs/contributors)
 
-First, run the development server:
 
+## 💻 Project
+- There is a Widget tools to send feedbacks that can be use in any site.
+- When clicked a pop-up open to make a sugestion, report or anything you want.
+
+# :camera: Screenshots
+<div align="center">
+   <img src="./.github/view.png" width="400">
+</div>
+
+## 🧪 Tech
+- [Next](https://nextjs.org/)
+- [TailWind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/)
+
+## 🛠️ Feactures
+- you can attach a screenshot in feedback.
+- everything works through the keyboard.
+> ### ➕ Added
+> - the theme will be able to changed to light/dark.
+
+
+## 📄How to run
+Clone this repository.
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/ZaninDe/unitok-challenge
+```
+```bash
+$ cd unitok-challenge
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+$ npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# unitok-challenge
+## 💭 Bonus
+- See the project running with this [URL](https://unitok-challenge-zaninde.vercel.app/).
