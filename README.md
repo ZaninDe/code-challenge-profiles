@@ -40,5 +40,9 @@ $ cd unitok-challenge
 $ npm install
 ```
 
+```bash
+$ npm run dev
+```
+
 ## 💭 Bonus
-- See the project running with this [URL](https://unitok-challenge-zaninde.vercel.app/).
+- See the project running with this [URL](https://unitok-challenge-49jwsj3gj-zaninde.vercel.app/).
