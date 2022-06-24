@@ -1,17 +1,11 @@
-import Router, { useRouter } from 'next/router';
 import { CSVLink } from 'react-csv';
 import { useEffect, useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { FacebookLogo, User, TwitterLogo } from 'phosphor-react';
 import axios from 'axios';
 
-function go(id) {
-  Router.push(`/api/profile/${id}`);
-}
-
-export default function Home(/*{ profiles }*/) {
+export default function Home() {
   const [profiles, setProfiles] = useState([]);
-  const router = useRouter();
 
   useEffect(() => {
     axios
@@ -26,6 +20,8 @@ export default function Home(/*{ profiles }*/) {
   const headers = [
     { label: 'name', key: 'name' },
     { label: 'email', key: 'email' },
+    { label: 'facebook', key: 'facebook' },
+    { label: 'twitter', key: 'twitter' },
   ];
 
   const csvReport = {
@@ -72,14 +68,3 @@ export default function Home(/*{ profiles }*/) {
     </main>
   );
 }
-
-// export async function getStaticProps() {
-//   const res = await fetch('http://localhost:3000/api/profiles');
-//   const profiles = await res.json();
-
-//   return {
-//     props: {
-//       profiles,
-//     },
-//   };
-// }
