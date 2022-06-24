@@ -36,35 +36,29 @@ export default function Home(/*{ profiles }*/) {
   };
 
   return (
-    <>
-      <h1 className='text-5xl text-blue-500'>Profiles List Preview</h1>
-      <h2>asPath:- {router.asPath}</h2>
+    <main className='flex flex-col items-center justify-center  w-full'>
+      <h1 className='text-5xl text-orange-500 p-6'>Profiles List Preview</h1>
+      <CSVLink
+        className='p-4 text-sm w-40 my-10 bg-green-500 flex items-center rounded font-bold uppercase  justify-center hover:bg-green-700 transition-colors'
+        {...csvReport}
+      >
+        EXPORT CSV
+      </CSVLink>
       {profiles.map((profile) => {
         const url = `${document.URL}/api/profile/${profile.id}`;
         return (
           <>
-            <div className=' flex items-center justify-around gap-8 max-w-3xl bg-gray-800 m-10 p-4 rounded-lg'>
+            <div className='bg-orange-500 min-w-[40vw] flex items-center justify-between m-8 p-4 rounded-xl'>
               <p key={profile.email}>
                 {profile.name} : {profile.email}
               </p>
-              <button onClick={() => router.push(url)}>go</button>
-
-              <br />
-              <br />
               <QRCodeSVG className='rounded' value={url} />
-              <br />
             </div>
           </>
         );
       })}
       <br />
-      <CSVLink
-        className='p-4 text-sm w-40 ml-56 bg-green-500 flex items-center rounded font-bold uppercase  justify-center hover:bg-green-700 transition-colors'
-        {...csvReport}
-      >
-        EXPORT CSV
-      </CSVLink>
-    </>
+    </main>
   );
 }
 

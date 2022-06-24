@@ -16,7 +16,7 @@ module.exports = {
           500: '#81D8F7',
         },
         orange: {
-          500: '#FBA94C',
+          500: '#ff4c1c',
         },
         red: {
           500: '#F75A68',
