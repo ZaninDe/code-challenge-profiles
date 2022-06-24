@@ -20,12 +20,6 @@
 - [TailWind CSS](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/)
 
-## 🛠️ Feactures
-- you can attach a screenshot in feedback.
-- everything works through the keyboard.
-> ### ➕ Added
-> - the theme will be able to changed to light/dark.
-
 
 ## 📄How to run
 Clone this repository.
