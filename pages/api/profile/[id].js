@@ -1,7 +1,7 @@
 const profiles = [
   { id: 1, name: 'Gabriel', email: 'gabriel@gmail.com' },
   { id: 2, name: 'Zanin', email: 'zanin@gmail.com' },
-  { id: 2, name: 'Gabriel Zanin', email: 'gabrielzanin@gmail.com' },
+  { id: 3, name: 'Gabriel Zanin', email: 'gabrielzanin@gmail.com' },
 ];
 
 const handler = (req, res) => {
