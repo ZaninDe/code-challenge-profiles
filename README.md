@@ -7,8 +7,8 @@
 
 
 ## 💻 Project
-- There is a Widget tools to send feedbacks that can be use in any site.
-- When clicked a pop-up open to make a sugestion, report or anything you want.
+- This is a simple project with NextJs + api to view registered profiles.
+- When QR code profile is scanned, you will be redirect to profile route.
 
 # :camera: Screenshots
 <div align="center">
