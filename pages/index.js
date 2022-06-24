@@ -2,8 +2,7 @@ import Router, { useRouter } from 'next/router';
 import { CSVLink } from 'react-csv';
 import { useEffect, useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
-import { useQRCode } from 'react-hook-qrcode';
-
+import { FacebookLogo, User, TwitterLogo } from 'phosphor-react';
 import axios from 'axios';
 
 function go(id) {
@@ -49,9 +48,21 @@ export default function Home(/*{ profiles }*/) {
         return (
           <>
             <div className='bg-orange-500 min-w-[40vw] flex items-center justify-between m-8 p-4 rounded-xl'>
-              <p key={profile.email}>
-                {profile.name} : {profile.email}
-              </p>
+              <div className='flex flex-col'>
+                <strong className='mb-4'>{profile.name}</strong>
+                <div className='flex text-gray-700 items-center gap-2 ml-2'>
+                  <User size={20} />
+                  <p key={profile.email}>{profile.email}</p>
+                </div>
+                <div className='flex text-gray-700 items-center gap-2 ml-2'>
+                  <FacebookLogo size={20} />
+                  <p key={profile.email}>{profile.facebook}</p>
+                </div>
+                <div className='flex text-gray-700 items-center gap-2 ml-2'>
+                  <TwitterLogo size={20} />
+                  <p key={profile.email}>{profile.twitter}</p>
+                </div>
+              </div>
               <QRCodeSVG className='rounded' value={url} />
             </div>
           </>

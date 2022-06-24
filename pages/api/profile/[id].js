@@ -1,7 +1,32 @@
 const profiles = [
-  { id: 1, name: 'Gabriel', email: 'gabriel@gmail.com' },
-  { id: 2, name: 'Zanin', email: 'zanin@gmail.com' },
-  { id: 3, name: 'Gabriel Zanin', email: 'gabrielzanin@gmail.com' },
+  {
+    id: 1,
+    name: 'Gabriel',
+    email: 'gabriel@gmail.com',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+  },
+  {
+    id: 2,
+    name: 'Zanin',
+    email: 'zanin@gmail.com',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+  },
+  {
+    id: 3,
+    name: 'Maria',
+    email: 'maria@gmail.com',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+  },
+  {
+    id: 4,
+    name: 'Pedro',
+    email: 'pedro@gmail.com',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+  },
 ];
 
 const handler = (req, res) => {
